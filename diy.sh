@@ -5,3 +5,4 @@ rm -rf spark-1.0.2-bin-hadoop2.tgz
 export SPARK_MASTER_IP=$OPENSHIFT_DIY_IP
 export SPARK_MASTER_PORT=17077
 export SPARK_WORKER_WEBUI_PORT=8080
+export spark.ui.host=0.0.0.0
