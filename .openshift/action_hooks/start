@@ -4,7 +4,7 @@
 # $OPENSHIFT_DIY_IP:8080
 #nohup $OPENSHIFT_REPO_DIR/diy/testrubyserver.rb $OPENSHIFT_DIY_IP $OPENSHIFT_REPO_DIR/diy |& /usr/bin/logshifter -tag diy &
 
-if [ "$SPARK_INIT" = "1" ]
+if [ "$SPARK_INIT" != "1" ]
   then
     cd $OPENSHIFT_DATA_DIR
     wget http://www.us.apache.org/dist/spark/spark-1.0.2/spark-1.0.2-bin-hadoop2.tgz
