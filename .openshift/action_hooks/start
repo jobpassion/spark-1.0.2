@@ -18,6 +18,7 @@ if [ "$SPARK_INIT" != "1" ]
     rm -rf spark-1.0.2-bin-hadoop2/lib/spark-assembly-1.0.2-hadoop2.2.0.jar
     wget -P spark-1.0.2-bin-hadoop2/lib https://jobpassion2-80.terminal.com/spark-assembly-1.0.2-hadoop2.2.0.jar
     export SPARK_INIT=1
+    echo "export SPARK_INIT=1">>$OPENSHIFT_DATA_DIR/.bash_profile
 fi
 
 ce spark-1.0.2-bin-hadoop2
