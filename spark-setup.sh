@@ -7,7 +7,6 @@ export SPARK_WORKER_IP=$OPENSHIFT_DIY_IP
 export SPARK_UI_HOST=$OPENSHIFT_DIY_IP
 if ["$SPARK_INIT" = "1"]
 then
-  fi
   wget http://www.us.apache.org/dist/spark/spark-1.0.2/spark-1.0.2-bin-hadoop2.tgz
   tar zxf spark-1.0.2-bin-hadoop2.tgz
   rm -rf spark-1.0.2-bin-hadoop2.tgz
