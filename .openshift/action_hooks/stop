@@ -11,4 +11,5 @@ source $OPENSHIFT_CARTRIDGE_SDK_BASH
 if [ -z "$(ps -ef | grep autossh | grep -v grep)" ]
 then
   kill `ps -ef | grep autossh | grep -v grep | awk '{ print $2 }'` > /dev/null 2>&1
+fi
 pkill java
