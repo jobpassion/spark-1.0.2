@@ -27,4 +27,3 @@ then
 fi
 cd $OPENSHIFT_DATA_DIR/spark-1.0.2-bin-hadoop2
 sbin/start-slave.sh --master spark://$OPENSHIFT_DIY_IP:17077
-
