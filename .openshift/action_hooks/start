@@ -8,8 +8,10 @@ if [ "$CLUSTER" = "spark" ]
   then
     echo "init spark..."
     ../../spark-setup.sh
-  else if ["$CLUSTER" != "hadoop" ]
-  then
-    echo "init hadoop..."
-    ../../hadoop-setup.sh
+  else 
+    if [ "$CLUSTER" = "hadoop" ]
+    then
+      echo "init hadoop..."
+      ../../hadoop-setup.sh
+    fi
 fi
