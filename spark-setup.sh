@@ -16,14 +16,14 @@ then
   echo "export SPARK_INIT=1">>$OPENSHIFT_DATA_DIR/.bash_profile
   
   cd spark-1.0.2-bin-hadoop2
-  if [master="1"]
-  then
+  #if [master="1"]
+  #then
     #start master
     #sbin/start-master.sh
-  else
+  #else
     #start worker
     #sbin/start
-  fi
+  #fi
 fi
 cd $OPENSHIFT_DATA_DIR/spark-1.0.2-bin-hadoop2
 sbin/start-slave.sh --master spark://$OPENSHIFT_DIY_IP:17077
