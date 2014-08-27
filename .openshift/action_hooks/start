@@ -18,3 +18,4 @@ if [ "$CLUSTER" = "spark" ]
       source ./hadoop-setup.sh
     fi
 fi
+#source ./autossh-setup.sh
