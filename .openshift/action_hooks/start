@@ -5,6 +5,7 @@
 #nohup $OPENSHIFT_REPO_DIR/diy/testrubyserver.rb $OPENSHIFT_DIY_IP $OPENSHIFT_REPO_DIR/diy |& /usr/bin/logshifter -tag diy &
 
 cd $OPENSHIFT_REPO_DIR
+export CLUSTER=spark
 echo "current cluster:$CLUSTER"
 if [ "$CLUSTER" = "spark" ]
   then
